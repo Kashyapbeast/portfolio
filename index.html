@@ -33,6 +33,7 @@ a{color:inherit}
 .track i{position:absolute;inset:0 auto 0 0;width:0;background:var(--holo)}
 .track b{position:absolute;top:-5px;left:0;width:2px;height:13px;background:#fff;box-shadow:0 0 12px 2px var(--cyan)}
 
+.featured{padding:70px 0 90px}.featured .wrap{position:relative}.featured-card{position:relative;border:1px solid var(--line);background:linear-gradient(180deg,rgba(10,15,30,.78),rgba(4,6,12,.72));padding:14px;box-shadow:0 0 45px rgba(0,229,255,.12);clip-path:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,28px 100%,0 calc(100% - 28px))}.featured-card::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(0,229,255,.08),transparent 35%,rgba(139,92,246,.08));z-index:0}.featured-player{position:relative;z-index:1;aspect-ratio:16/9;width:100%;overflow:hidden;background:#000;border:1px solid rgba(0,229,255,.18)}.featured-player iframe{width:100%;height:100%;display:block;border:0}.featured-meta{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:24px;padding:20px 8px 4px}.featured-meta h3{font-family:var(--disp);font-size:clamp(1.1rem,2.5vw,1.8rem);line-height:1.15}.featured-meta p{color:var(--dim);margin-top:6px}.featured-tag{color:var(--cyan);font-size:.8rem;font-weight:700;letter-spacing:.12em;white-space:nowrap}@media(max-width:600px){.featured{padding-top:35px}.featured-card{padding:8px}.featured-meta{display:block}.featured-tag{display:inline-block;margin-top:12px}}
 .hero{min-height:100vh;padding:110px 0 70px;display:flex;align-items:center}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:center}
 .frame{position:relative;padding:14px;max-width:470px;justify-self:center;animation:boot 1s .1s both cubic-bezier(.2,.8,.2,1)}
@@ -135,6 +136,21 @@ dialog .x:hover{background:var(--cyan);color:#04060C}
     </div>
   </div>
 </div>
+<section class="featured" id="featured-video">
+  <div class="wrap">
+    <h2>Featured work</h2>
+    <p class="sub">A featured edit — watch it directly here without leaving my portfolio.</p>
+    <div class="featured-card">
+      <div class="featured-player">
+        <iframe src="https://www.youtube-nocookie.com/embed/HD28cwbQ7SU?rel=0&modestbranding=1" title="Featured work by Nakul" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      </div>
+      <div class="featured-meta">
+        <div><h3>Featured Video</h3><p>Video editing • Creative storytelling</p></div>
+        <span class="featured-tag">WATCH / PLAY</span>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="video"><div class="wrap"><h2>Video editing</h2><p class="sub" id="videoSub"></p><div class="grid" id="videoGrid"></div></div></section>
 <section id="photo" class="panel"><div class="wrap"><h2>Photography</h2><p class="sub" id="photoSub"></p><div class="shots" id="photoGrid"></div></div></section>
 <section id="design"><div class="wrap"><h2>Graphic design</h2><p class="sub" id="designSub"></p><div class="designs" id="designGrid"></div></div></section>
