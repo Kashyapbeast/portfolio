@@ -50,7 +50,7 @@ a{color:inherit}
 .chip.a{top:34px;left:-6px;color:var(--red)}.chip.b{bottom:42px;right:-8px;color:var(--cyan)}
 
 .hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(3rem,9.5vw,7.4rem);line-height:.95;letter-spacing:-.02em;background:var(--holo);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 28px rgba(0,229,255,.28));animation:boot 1s .35s both cubic-bezier(.2,.8,.2,1)}
-.role{font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:600;margin-top:18px;min-height:1.6em;animation:boot 1s .55s both}
+.hero h1 .surname{display:block;font-size:clamp(1.15rem,3vw,2.1rem);letter-spacing:.12em;line-height:1.1;margin-top:10px;color:var(--cyan);-webkit-text-fill-color:var(--cyan);filter:none}.role{font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:600;margin-top:18px;min-height:1.6em;animation:boot 1s .55s both}
 .role .cur{display:inline-block;width:3px;height:1.1em;background:var(--cyan);margin-left:4px;vertical-align:-.15em;animation:blink 1s steps(2) infinite}
 .bio{margin-top:14px;max-width:32em;color:var(--dim);animation:boot 1s .7s both}
 .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;animation:boot 1s .85s both}
@@ -128,7 +128,7 @@ dialog .x:hover{background:var(--cyan);color:#04060C}
       <span class="chip a">REC</span><span class="chip b">Video / Photo / Design</span>
     </div>
     <div>
-      <h1>NAKUL</h1>
+      <h1>NAKUL<span class="surname">Kashyap</span></h1>
       <p class="role"><span id="typed"></span><span class="cur"></span></p>
       <p class="bio" id="heroBio"></p>
       <div class="cta"><a class="btn fill" href="#video">Watch my edits</a><a class="btn" href="#contact">Work with me</a></div>
@@ -160,9 +160,14 @@ const SITE = {
   /* type "youtube": url = any YouTube link. type "file": src = path in the repo, poster = optional thumbnail */
   videos: [
     {type:"youtube", title:"Featured Edit", note:"Video editing • Creative storytelling", url:"https://youtu.be/HD28cwbQ7SU"},
+    {type:"file", title:"Creative Video", note:"Video editing • Portfolio work", src:"assets/-3782798722179831984.MP4"},
   ],
   photoSub: "Selected frames. Click any photo to enlarge.",
-  photos: [ /* {src:"photos/one.jpg", alt:"Describe the photo"} */ ],
+  photos: [
+    {src:"assets/IMG_2650.jpg", alt:"Photography portfolio image"},
+    {src:"assets/IMG_2671.jpg", alt:"Photography portfolio image"},
+    {src:"assets/nakul-road.jpeg", alt:"Outdoor photography portrait"},
+  ],
   designSub: "Posters, thumbnails, brand work and social creatives.",
   designs: [ /* {src:"design/one.jpg", alt:"Describe the design"} */ ]
 };
