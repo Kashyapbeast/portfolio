@@ -136,21 +136,6 @@ dialog .x:hover{background:var(--cyan);color:#04060C}
     </div>
   </div>
 </div>
-<section class="featured" id="featured-video">
-  <div class="wrap">
-    <h2>Featured work</h2>
-    <p class="sub">A featured edit — watch it directly here without leaving my portfolio.</p>
-    <div class="featured-card">
-      <div class="featured-player">
-        <iframe src="https://www.youtube-nocookie.com/embed/HD28cwbQ7SU?rel=0&modestbranding=1" title="Featured work by Nakul" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-      </div>
-      <div class="featured-meta">
-        <div><h3>Featured Video</h3><p>Video editing • Creative storytelling</p></div>
-        <span class="featured-tag">WATCH / PLAY</span>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="video"><div class="wrap"><h2>Video editing</h2><p class="sub" id="videoSub"></p><div class="grid" id="videoGrid"></div></div></section>
 <section id="photo" class="panel"><div class="wrap"><h2>Photography</h2><p class="sub" id="photoSub"></p><div class="shots" id="photoGrid"></div></div></section>
 <section id="design"><div class="wrap"><h2>Graphic design</h2><p class="sub" id="designSub"></p><div class="designs" id="designGrid"></div></div></section>
@@ -172,11 +157,10 @@ const SITE = {
   email: "you@example.com",
   socials: [ {label:"Instagram", url:"https://instagram.com/"}, {label:"YouTube", url:"https://youtube.com/"} ],
 
-  videoSub: "Paste a YouTube link and it plays right here on this page. Files from the repository work too.",
+  videoSub: "Selected edits and creative video work.",
   /* type "youtube": url = any YouTube link. type "file": src = path in the repo, poster = optional thumbnail */
   videos: [
-    // {type:"youtube", title:"Project name", note:"Reel, 0:45", url:"https://www.youtube.com/watch?v=XXXXXXXXXXX"},
-    // {type:"file", title:"Project name", note:"Ad film", src:"videos/my-edit.mp4", poster:"videos/my-edit.jpg"},
+    {type:"youtube", title:"Featured Edit", note:"Video editing • Creative storytelling", url:"https://youtu.be/HD28cwbQ7SU"},
   ],
   photoSub: "Selected frames. Click any photo to enlarge.",
   photos: [ /* {src:"photos/one.jpg", alt:"Describe the photo"} */ ],
