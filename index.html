@@ -82,9 +82,9 @@ section h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,
 .shots button:hover{border-color:var(--cyan);box-shadow:0 0 30px rgba(0,229,255,.3)}
 .shots img{width:100%;display:block}
 .designs{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-.designs button{border:1px solid var(--line);padding:0;background:none;cursor:zoom-in;aspect-ratio:1;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.designs button{border:1px solid var(--line);padding:0;background:#080C18;cursor:zoom-in;aspect-ratio:4/5;overflow:hidden;transition:box-shadow .3s,border-color .3s}
 .designs button:hover{border-color:var(--violet);box-shadow:0 0 30px rgba(139,92,246,.4)}
-.designs img{width:100%;height:100%;object-fit:cover;display:block}
+.designs img{width:100%;height:100%;object-fit:contain;display:block}
 
 .about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
 .about h3{font-family:var(--disp);font-weight:700;font-size:1rem;margin-bottom:14px;color:var(--cyan)}
@@ -160,7 +160,9 @@ const SITE = {
   /* type "youtube": url = any YouTube link. type "file": src = path in the repo, poster = optional thumbnail */
   videos: [
     {type:"youtube", title:"Featured Edit", note:"Video editing • Creative storytelling", url:"https://youtu.be/HD28cwbQ7SU"},
-    {type:"file", title:"Creative Video", note:"Video editing • Portfolio work", src:"assets/-3782798722179831984.MP4"},
+    {type:"file", title:"Creative Video 01", note:"Video editing • Portfolio work", src:"assets/-3782798722179831984.MP4"},
+    {type:"file", title:"Creative Video 02", note:"Video editing • Portfolio work", src:"assets/4252391317669193567-2.mp4"},
+    {type:"file", title:"Creative Video 03", note:"Video editing • Portfolio work", src:"1781245612610946288-2.mp4"},
   ],
   photoSub: "Selected frames. Click any photo to enlarge.",
   photos: [
